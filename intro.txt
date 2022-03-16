@@ -1,0 +1,25 @@
+source
+code	==============> *.exe (*.dll) *.so  x86
+ *.c      compile (dev)
+ *.h    Ahead-Of-Time compile
+
+
+интерпретация
+*.js
+	target computer (интерпретатор + библиотека)
+
+JIT (Just-In-Time compile)
+	target computer
+
+
+*.cs ================> MSIL (*.exe, *.dll) =========> target JIT compile
+       compile (div)   assembly сборка		   CLR (IL->native code)+.net class library
+
+.net framework runtime = CLR +.net class library
+
+Mono
+2000-2020 .net framework (1.0 - 4.7.3  C# 1.0 - 7.3) windows only
+2015 - 2020 .net core (1.0 2.0 3.0) windows + unix + macos
+
+2020 .net (core) 5.0 crossplatform full functional C# 8.0
+.net 6&7(preview)
