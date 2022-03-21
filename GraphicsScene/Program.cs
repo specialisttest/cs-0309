@@ -58,8 +58,8 @@ namespace GraphicsScene
             //    Console.WriteLine(e.Message);
             //}
 
-            
-            
+
+            Shape.ScaleScene(2);
 
             Shape.DrawScene();
             

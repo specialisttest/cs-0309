@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GraphicsScene
 {
-    public class Circle:  Shape
+    public class Circle:  Shape, IScaleable
     {
         public int X { get; set; }
         public int Y { get; set; }
@@ -50,9 +50,19 @@ namespace GraphicsScene
             Console.WriteLine($"Circle ({X}, {Y}). R: {R}. {Color}");
         }
 
-        public void Scale(double factor)
+
+        //void IScaleable.Scale(double factor) // explicit implementation
+        
+        public void Scale(double factor) // implicit implementation
         {
             R = (int)Math.Round(R * factor);
+        }
+
+        // override
+        //void IScaleable.Log()
+        public void Log()
+        {
+            Console.WriteLine("Circle.Test()");
         }
 
     }

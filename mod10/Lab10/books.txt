@@ -1,0 +1,86 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:Books id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<books href="#ref-3"/>
+</a1:Books>
+<SOAP-ENC:Array id="ref-3" SOAP-ENC:arrayType="a1:Book[11]" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<item href="#ref-4"/>
+<item href="#ref-5"/>
+<item href="#ref-6"/>
+<item href="#ref-7"/>
+<item href="#ref-8"/>
+<item href="#ref-9"/>
+<item href="#ref-10"/>
+<item href="#ref-11"/>
+<item href="#ref-12"/>
+<item href="#ref-13"/>
+<item href="#ref-14"/>
+</SOAP-ENC:Array>
+<a1:Book id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Id_x003E_k__BackingField>1</_x003C_Id_x003E_k__BackingField>
+<_x003C_Price_x003E_k__BackingField>32</_x003C_Price_x003E_k__BackingField>
+<_x003C_Title_x003E_k__BackingField id="ref-15">Dependency Injection in .NET</_x003C_Title_x003E_k__BackingField>
+<_x003C_Author_x003E_k__BackingField id="ref-16">Seemann</_x003C_Author_x003E_k__BackingField>
+</a1:Book>
+<a1:Book id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Id_x003E_k__BackingField>2</_x003C_Id_x003E_k__BackingField>
+<_x003C_Price_x003E_k__BackingField>42</_x003C_Price_x003E_k__BackingField>
+<_x003C_Title_x003E_k__BackingField id="ref-17">CLR via C#</_x003C_Title_x003E_k__BackingField>
+<_x003C_Author_x003E_k__BackingField id="ref-18">Richter</_x003C_Author_x003E_k__BackingField>
+</a1:Book>
+<a1:Book id="ref-6" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Id_x003E_k__BackingField>3</_x003C_Id_x003E_k__BackingField>
+<_x003C_Price_x003E_k__BackingField>21</_x003C_Price_x003E_k__BackingField>
+<_x003C_Title_x003E_k__BackingField id="ref-19">ASP.NET MVC 5</_x003C_Title_x003E_k__BackingField>
+<_x003C_Author_x003E_k__BackingField id="ref-20">Munro</_x003C_Author_x003E_k__BackingField>
+</a1:Book>
+<a1:Book id="ref-7" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Id_x003E_k__BackingField>5</_x003C_Id_x003E_k__BackingField>
+<_x003C_Price_x003E_k__BackingField>30</_x003C_Price_x003E_k__BackingField>
+<_x003C_Title_x003E_k__BackingField id="ref-21">Architecting Applications for the Enterprise</_x003C_Title_x003E_k__BackingField>
+<_x003C_Author_x003E_k__BackingField id="ref-22">Esposito</_x003C_Author_x003E_k__BackingField>
+</a1:Book>
+<a1:Book id="ref-8" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Id_x003E_k__BackingField>6</_x003C_Id_x003E_k__BackingField>
+<_x003C_Price_x003E_k__BackingField>23</_x003C_Price_x003E_k__BackingField>
+<_x003C_Title_x003E_k__BackingField id="ref-23">Writing High-Performance .NET Code</_x003C_Title_x003E_k__BackingField>
+<_x003C_Author_x003E_k__BackingField id="ref-24">Watson</_x003C_Author_x003E_k__BackingField>
+</a1:Book>
+<a1:Book id="ref-9" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Id_x003E_k__BackingField>7</_x003C_Id_x003E_k__BackingField>
+<_x003C_Price_x003E_k__BackingField>37</_x003C_Price_x003E_k__BackingField>
+<_x003C_Title_x003E_k__BackingField id="ref-25">Microsoft Visual C# 2013</_x003C_Title_x003E_k__BackingField>
+<_x003C_Author_x003E_k__BackingField id="ref-26">Sharp</_x003C_Author_x003E_k__BackingField>
+</a1:Book>
+<a1:Book id="ref-10" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Id_x003E_k__BackingField>9</_x003C_Id_x003E_k__BackingField>
+<_x003C_Price_x003E_k__BackingField>11</_x003C_Price_x003E_k__BackingField>
+<_x003C_Title_x003E_k__BackingField id="ref-27">Regular Expression</_x003C_Title_x003E_k__BackingField>
+<_x003C_Author_x003E_k__BackingField id="ref-28">Stubblebine</_x003C_Author_x003E_k__BackingField>
+</a1:Book>
+<a1:Book id="ref-11" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Id_x003E_k__BackingField>10</_x003C_Id_x003E_k__BackingField>
+<_x003C_Price_x003E_k__BackingField>27</_x003C_Price_x003E_k__BackingField>
+<_x003C_Title_x003E_k__BackingField id="ref-29">Learning Visual Basic .Net</_x003C_Title_x003E_k__BackingField>
+<_x003C_Author_x003E_k__BackingField id="ref-30">Liberty</_x003C_Author_x003E_k__BackingField>
+</a1:Book>
+<a1:Book id="ref-12" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Id_x003E_k__BackingField>11</_x003C_Id_x003E_k__BackingField>
+<_x003C_Price_x003E_k__BackingField>62</_x003C_Price_x003E_k__BackingField>
+<_x003C_Title_x003E_k__BackingField id="ref-31">Framework Design Guidelines</_x003C_Title_x003E_k__BackingField>
+<_x003C_Author_x003E_k__BackingField id="ref-32">Cwalina</_x003C_Author_x003E_k__BackingField>
+</a1:Book>
+<a1:Book id="ref-13" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Id_x003E_k__BackingField>12</_x003C_Id_x003E_k__BackingField>
+<_x003C_Price_x003E_k__BackingField>55</_x003C_Price_x003E_k__BackingField>
+<_x003C_Title_x003E_k__BackingField id="ref-33">Pro Asynchronous Programming with .NET</_x003C_Title_x003E_k__BackingField>
+<_x003C_Author_x003E_k__BackingField id="ref-34">Blewett</_x003C_Author_x003E_k__BackingField>
+</a1:Book>
+<a1:Book id="ref-14" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab10/Lab10%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Id_x003E_k__BackingField>13</_x003C_Id_x003E_k__BackingField>
+<_x003C_Price_x003E_k__BackingField>47</_x003C_Price_x003E_k__BackingField>
+<_x003C_Title_x003E_k__BackingField id="ref-35">Windows Presentation Foundation Unleashed</_x003C_Title_x003E_k__BackingField>
+<_x003C_Author_x003E_k__BackingField id="ref-36">Nathan</_x003C_Author_x003E_k__BackingField>
+</a1:Book>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

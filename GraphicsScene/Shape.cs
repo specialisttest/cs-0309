@@ -48,8 +48,9 @@ namespace GraphicsScene
         }
 
         public abstract void Draw();
+        
         //{
-            // Console.WriteLine("Shape. {0}", this.Color);
+        // Console.WriteLine("Shape. {0}", this.Color);
         //}
 
         public void Test()
@@ -69,6 +70,24 @@ namespace GraphicsScene
             foreach (Shape s in scene)
                 summa += s.Area;
             return summa;
+        }
+
+        public static void ScaleScene(double factor)
+        {
+            foreach (Shape s in scene)
+            {
+                //IScaleable sc = s as IScaleable;
+                //if (sc != null)
+                //    sc.Scale(factor);
+
+
+                //if (s is IScaleable sc)
+                //    sc.Scale(factor);  // polymorphism !!!
+
+                (s as IScaleable)?.Scale(factor);
+                (s as IScaleable)?.Log();
+            }
+                
         }
     }
 }

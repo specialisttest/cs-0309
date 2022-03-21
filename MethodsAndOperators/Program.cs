@@ -159,8 +159,8 @@ namespace MethodsAndOperators
                 string[] names =  { "Сергей", "Юлия", "Татьяна"};
                 //for (int i = 0; i < names.Length; i++)
                 //    Console.WriteLine(names[i]);
-                //foreach(string name in names)
-                //    Console.WriteLine(name);
+                foreach(string name in names)
+                    Console.WriteLine(name);
 
                 IEnumerator en = names.GetEnumerator();
                 while (en.MoveNext())
@@ -185,6 +185,11 @@ namespace MethodsAndOperators
 
             
             }
+            { 
+            
+            
+            }
+
             {
                 foreach (int n in GetNumbers3())
                     Console.WriteLine(n);
