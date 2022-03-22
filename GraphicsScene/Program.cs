@@ -49,6 +49,30 @@ namespace GraphicsScene
 
             (s1 as Point)?.MoveBy(1, 1);
 
+            Point p11 = new Point(10, 20);
+            Point p12 = new Point(1, 2);
+            Console.WriteLine(p11);
+            Console.WriteLine(p12);
+
+            Point p13 = p11 + p12; //Point.Add(p11, p12);
+
+            Console.WriteLine(p13);
+
+            p13 = 2 * p13 * 5;
+            p13 *= 2;
+            Console.WriteLine(p13);
+
+            Point p14 = 1 * p13;
+            Console.WriteLine(p13);
+            Console.WriteLine(p14);
+
+            if (p13)
+                Console.WriteLine("True");
+            else
+                Console.WriteLine("False");
+
+            Console.WriteLine(p13 == p14);
+
 
 
             //new Circle(10, 20, 30) { R=-10};
@@ -59,10 +83,10 @@ namespace GraphicsScene
             //}
 
 
-            Shape.ScaleScene(2);
+            //Shape.ScaleScene(2);
 
-            Shape.DrawScene();
-            
+            //Shape.DrawScene();
+
         }
     }
 }
