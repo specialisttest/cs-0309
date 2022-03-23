@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 using static System.Math;
 
@@ -30,7 +31,7 @@ namespace OOP
             //p1.Name = "Сергей";
             //p1.Age = 44;
             //Person p1 = new Person("Сергей", 44);
-            Person p1 = new Person();
+            Person p1 = new Person("Андрей", 47);
 
             Person p2 = new Person("Костя", 15);
             //p2.Name = "Костя";
@@ -53,6 +54,16 @@ namespace OOP
 
             //Console.WriteLine(Person.Counter);
             Person.ShowTotal();
+
+            List<Person> persons = new List<Person>() { p1, p2, p3 };
+            persons.Sort( (p1, p2)=> p1.Name.CompareTo(p2.Name) );
+            Console.WriteLine("***************");
+            foreach (var p in persons)
+                Console.WriteLine(p);
+            persons.Sort((p1, p2) => p1.Age - p2.Age);
+            Console.WriteLine("***************");
+            foreach (var p in persons)
+                Console.WriteLine(p);
 
             double x = 1;
             // y = sin(log(x*PI))

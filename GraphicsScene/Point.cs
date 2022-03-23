@@ -82,5 +82,54 @@ namespace GraphicsScene
         {
             return !(p1 == p2); 
         }
+
+        public int this[int index]
+        {
+            get 
+            {
+                switch (index)
+                {
+                    case 0: return this.X;
+                    case 1: return this.Y;
+                    default: throw new IndexOutOfRangeException();
+                }
+            }
+            set 
+            {
+                switch (index)
+                {
+                    case 0: this.X = value; break;
+                    case 1: this.Y = value; break;
+                    default: throw new IndexOutOfRangeException();
+                }
+            }
+        }
+
+        public int this[string index]
+        {
+            get
+            {
+                switch (char.ToUpper(index[0]))
+                {
+                    case 'X': return this.X;
+                    case 'Y': return this.Y;
+                    default: throw new IndexOutOfRangeException();
+                }
+            }
+            set
+            {
+                switch (char.ToUpper(index[0]))
+                {
+                    case 'X': this.X = value; break;
+                    case 'Y': this.Y = value; break;
+                    default: throw new IndexOutOfRangeException();
+                }
+            }
+        }
+
+        public static /*explicit*/ implicit operator double(Point p)
+        {
+            return Math.Sqrt(p.X * p.X + p.Y * p.Y);
+        }
     }
 }

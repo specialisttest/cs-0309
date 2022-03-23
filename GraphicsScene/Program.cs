@@ -1,7 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GraphicsScene
 {
+    public static class IntExt
+    {
+        public static int Cube(this int x)
+        {
+            return x * x * x;
+        }
+
+        public static int Power(this int x, int power)
+        {
+            int r = 1;
+            for (int i = 1; i <= power; i++)
+                r *= x;
+            return r;
+        }
+    }
+
+
     class Program
     {
         static void Main(string[] args)
@@ -72,8 +90,13 @@ namespace GraphicsScene
                 Console.WriteLine("False");
 
             Console.WriteLine(p13 == p14);
+            Console.WriteLine(p11[0]); // p.X
+            Console.WriteLine(p11[1]); // p.Y
+            Console.WriteLine(p11["x"]); // p.X
+            Console.WriteLine(p11["y"]); // p.Y
 
-
+            //double d = (double)p11;
+            double d = p11;
 
             //new Circle(10, 20, 30) { R=-10};
             //}
@@ -86,6 +109,13 @@ namespace GraphicsScene
             //Shape.ScaleScene(2);
 
             //Shape.DrawScene();
+
+            int k = 5;
+            int k3 = k.Cube(); //IntExt.Cube(k);
+            Console.WriteLine(k3);
+            Console.WriteLine(k.Power(4));
+            
+
 
         }
     }

@@ -64,6 +64,10 @@ namespace GraphicsScene
                 s.Draw(); // polymorphism !!!
         }
 
+        public static void ResetScene() {
+            scene.Clear();
+        }
+
         public static double SceneArea()
         {
             double summa = 0d;
